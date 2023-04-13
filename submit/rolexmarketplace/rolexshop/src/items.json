@@ -1,0 +1,85 @@
+{
+  "items": [
+    {
+      "id": 1,
+      "name": "Rolex Explorer 1",
+      "category": "explorers",
+      "image": "https://ipfs.io/ipfs/QmZsiz25k1o1K3oyW3TNrU8TFwVirSBcGHEQSYX5yhr7SR?filename=explorer1.jpg",
+      "price": "10",
+      "rating": 4,
+      "stock": 10
+    },
+    {
+      "id": 2,
+      "name": "Rolex Explorer 2",
+      "category": "explorers",
+      "image": "https://www.watchesandwatches.com/media/catalog/product/cache/1/small_image/350x350/9df78eab33525d08d6e5fb8d27136e95/3/5/35426.jpg",
+      "price": "8.5",
+      "rating": 5,
+      "stock": 6
+    },
+    {
+      "id": 3,
+      "name": "Rolex Explorer 3",
+      "category": "explorers",
+      "image": "https://watchpoint.eu/wp-content/uploads/2022/10/explorer-350x350.jpg",
+      "price": "9.25",
+      "rating": 3,
+      "stock": 24
+    },
+    {
+      "id": 4,
+      "name": "Rolex Submariner 1",
+      "category": "submariners",
+      "image": "https://ipfs.io/ipfs/QmXduHJQKeaMAdDqr95VxPTkonMxL1Y46AvPLvN4wcXdWZ?filename=submariner1.jpg",
+      "price": "20.25",
+      "rating": 5,
+      "stock": 3
+    },
+    {
+      "id": 5,
+      "name": "Rolex Submariner 2",
+      "category": "submariners",
+      "image": "https://ipfs.io/ipfs/QmRU5qjhbkb8UuPtuQ6x8aWALYjc6KxGceoNZbzUftBHUX?filename=submariner2.jpg",
+      "price": "17.25",
+      "rating": 4,
+      "stock": 12
+    },
+    {
+      "id": 6,
+      "name": "Rolex Submariner 3",
+      "category": "submariners",
+      "image": "https://watchpoint.eu/wp-content/uploads/2022/10/Rolex-Submariner-126610LN-0001-350x350.jpg",
+      "price": "12.25",
+      "rating": 4,
+      "stock": 0
+    },
+    {
+      "id": 7,
+      "name": "Rolex Oyster 1",
+      "category": "oysters",
+      "image": "https://www.hautehorlogerie.org/uploads/tx_news/rolex-oyster-perpetual-36-2020_square.jpg",
+      "price": "50",
+      "rating": 4,
+      "stock": 15
+    },
+    {
+      "id": 8,
+      "name": "Rolex Oyster 2",
+      "category": "oysters",
+      "image": "https://0b2bf9b4.aerocdn.com/image-factory/a542e7e35565d2f68c1292f35373b6331817fae4~350x350/images/products/kEkor4neKKosu2Ev1eG2VUP2Mh6HuNMAn2ZhsLiK.jpg",
+      "price": "12.75",
+      "rating": 4,
+      "stock": 0
+    },
+    {
+      "id": 9,
+      "name": "Rolex Oyster 3",
+      "category": "oysters",
+      "image": "https://www.hautehorlogerie.org/uploads/tx_news/Rolex-Day-Date-40-2015_square.jpg",
+      "price": "15.5",
+      "rating": 3,
+      "stock": 12
+    }
+  ]
+}

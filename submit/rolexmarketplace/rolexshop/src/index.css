@@ -1,0 +1,404 @@
+@import url('https://fonts.googleapis.com/css2?family=Lalezar&family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
+
+* {
+  margin: 0 !important;
+  padding: 0 !important;
+  box-sizing: border-box !important;
+}
+
+:root {
+  --clr-white: #FFFFFF !important;
+  --clr-black: #000000 !important;
+  --clr-grey: #707070 !important;
+  --clr-bunker: #146430 !important;
+  --clr-ebony-clay: #cd9329 !important;
+  --clr-orange: #eae587 !important;
+  --clr-orange-dark: #cc8111 !important;
+}
+
+body {
+  margin: 0 !important;
+  font-family: "Open Sans" !important;
+  -webkit-font-smoothing: antialiased !important;
+  -moz-osx-font-smoothing: grayscale !important;
+}
+
+h2 {
+  max-width: 1200px !important;
+  margin: 20px auto 0 !important;
+
+  font-size: 2.15em !important;
+}
+
+h2:not(.product__overview h2) {
+  padding-left: 20px !important;
+}
+
+/* ------------------------------------------------------ */
+/* -- NAVIGATION -- */
+
+nav {
+  display: grid !important;
+  grid-template-columns: repeat(3, 1fr) !important;
+  align-items: center !important;
+
+  background-color: var(--clr-bunker) !important;
+}
+
+.nav__brand {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+}
+
+.nav__brand img {
+  max-width: 125px !important;
+  height: auto !important;
+}
+
+.nav__brand h1 {
+  color: var(--clr-white) !important;
+  font-family: "Lalezar" !important;
+  font-size: 2.5em !important;
+}
+
+.nav__links {
+  background-color: var(--clr-ebony-clay) !important;
+  grid-column: 1 / span 3 !important;
+
+  padding: 10px !important;
+
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+
+  list-style: none !important;
+}
+
+.nav__links li {
+  margin: 0 15px !important;
+}
+
+.nav__links li a {
+  text-decoration: none !important;
+  color: var(--clr-white) !important;
+}
+
+.nav__links li a:hover {
+  color: var(--clr-orange) !important;
+}
+
+.nav__search {
+  padding: 10px !important;
+  border-radius: 6px !important;
+  min-width: 50% !important;
+}
+
+.nav__search:hover {
+  outline: 1px solid var(--clr-orange) !important;
+}
+
+.nav__connect {
+  width: 150px !important;
+  height: 40px !important;
+  margin: 0 auto !important;
+
+  background-color: var(--clr-orange) !important;
+  color: var(--clr-black) !important;
+
+  border: none !important;
+  border-radius: 4px !important;
+
+  font-family: "Lalezar" !important;
+  font-size: 1.25em !important;
+  font-weight: 600 !important;
+
+  cursor: pointer !important;
+  transition: all 250ms ease !important;
+}
+
+.nav__connect:hover {
+  background-color: var(--clr-orange-dark) !important;
+}
+
+/* ------------------------------------------------------ */
+/* -- CARDS -- */
+
+.cards__section {
+  max-width: 1200px !important;
+  margin: 0 auto 50px !important;
+  padding: 0 20px !important;
+}
+
+.cards__section h3 {
+  font-size: 1.75em !important;
+  margin: 20px 0 !important;
+}
+
+.cards {
+  display: grid !important;
+  gap: 10px !important;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 350px), 1fr)) !important;
+  margin-top: 20px !important;
+}
+
+.card {
+  width: 300px !important;
+  height: 400px !important;
+
+  margin: 10px auto !important;
+
+  cursor: pointer !important;
+  position: relative !important;
+
+  opacity: 0.99 !important;
+  transition: all 250ms ease !important;
+}
+
+.card:hover {
+  box-shadow: 0 0 5px var(--clr-grey) !important;
+}
+
+.card__image {
+  position: absolute !important;
+  width: 100% !important;
+  z-index: -1 !important;
+}
+
+.card__image img {
+  max-width: 100% !important;
+}
+
+.card__info {
+  width: 100% !important;
+
+  background-color: var(--clr-white) !important;
+
+  padding: 5px 10px !important;
+
+  position: absolute !important;
+  bottom: 0 !important;
+  left: 0 !important;
+}
+
+.card__info h4 {
+  font-family: "Open Sans" !important;
+  font-size: 1.25em !important;
+  font-weight: 400 !important;
+}
+
+.card__info .rating {
+  color: yellow !important;
+  margin: 5px 0 !important;
+}
+
+.card__info p {
+  font-family: "Open Sans" !important;
+  font-size: 0.95em !important;
+  font-weight: 600 !important;
+  margin-top: 5px !important;
+}
+
+/* ------------------------------------------------------ */
+/* -- PRODUCT -- */
+
+.product {
+  width: 100vw !important;
+  height: 100vh !important;
+  background-color: rgba(0, 0, 0, 0.7) !important;
+
+  position: fixed !important;
+  top: 50% !important;
+  left: 50% !important;
+  transform: translate(-50%, -50%) !important;
+}
+
+.product__details {
+  display: grid !important;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 250px), 1fr)) !important;
+  align-items: center !important;
+
+  width: 80% !important;
+  height: 80% !important;
+  margin: 0 auto !important;
+  padding: 20px !important;
+
+  position: fixed !important;
+  top: 50% !important;
+  left: 50% !important;
+  transform: translate(-50%, -50%) !important;
+  z-index: 2 !important;
+
+  background: var(--clr-white) !important;
+}
+
+.product__image {
+  max-width: 500px !important;
+  margin: 20px auto !important;
+}
+
+.product__image img {
+  max-width: 100% !important;
+}
+
+.product__close {
+  position: absolute !important;
+  top: 10px !important;
+  right: 10px !important;
+
+  width: 30px !important;
+  height: 30px !important;
+
+  background: transparent !important;
+  border: none !important;
+
+  cursor: pointer !important;
+}
+
+.product__close img {
+  width: 25px !important;
+  height: 25px !important;
+}
+
+.product__overview {
+  height: 90% !important;
+  padding: 20px 40px 20px 20px !important;
+}
+
+.product__overview h2,
+.product__overview hr,
+.product__overview .rating {
+  margin: 10px auto !important;
+}
+
+.product__overview ul {
+  margin-left: 40px !important;
+}
+
+.product__order {
+  max-width: 300px !important;
+  height: 90% !important;
+
+  border: 1px solid var(--clr-grey) !important;
+  padding: 20px !important;
+}
+
+.product__order h1,
+.product__order p {
+  margin-bottom: 10px !important;
+}
+
+.product__buy {
+  width: 225px !important;
+  height: 40px !important;
+  margin: 20px 0 !important;
+
+  background-color: var(--clr-orange) !important;
+  color: var(--clr-black) !important;
+
+  border: none !important;
+  border-radius: 24px !important;
+
+  font-family: "Open Sans" !important;
+  font-size: 0.95em !important;
+  font-weight: 600 !important;
+
+  cursor: pointer !important;
+  transition: all 250ms ease !important;
+}
+
+.product__buy:hover {
+  background-color: var(--clr-orange-dark) !important;
+}
+
+.product__bought {
+  padding: 5px !important;
+  border: 1px solid var(--clr-grey) !important;
+}
+
+/* Style the modal header */
+.modal-header {
+  background-color: #f8f9fa;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+/* Style the modal title */
+.modal-title {
+  font-size: 24px;
+  font-weight: bold;
+  color: #212529;
+}
+
+/* Style the modal body */
+.modal-body {
+  padding: 20px;
+}
+
+/* Style the form labels */
+label {
+  font-weight: bold;
+}
+
+/* Style the form inputs */
+.form-control {
+  border-radius: 5px;
+  border: 1px solid #ced4da;
+}
+
+/* Style the checkbox label */
+.checkbox label {
+  font-weight: normal;
+}
+
+/* Style the submit button */
+.btn-primary {
+  background-color: #007bff;
+  border-color: #007bff;
+}
+
+.btn-primary:hover {
+  background-color: #0069d9;
+  border-color: #0062cc;
+}
+
+@media screen and (max-width: 992px) {
+  .product__details {
+    height: 95% !important;
+    width: 90% !important;
+  }
+
+  .product__order {
+    max-width: 100% !important;
+    height: 100% !important;
+    margin-top: 20px !important;
+    grid-column: span 2 !important;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  nav {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+
+  .nav__links {
+    display: none !important;
+  }
+
+  .nav__search {
+    display: none !important;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .product__details {
+    height: 95% !important;
+    overflow-y: scroll !important;
+  }
+
+  .product__image {
+    grid-column: span 2 !important;
+  }
+}
+
+
